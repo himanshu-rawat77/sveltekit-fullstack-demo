@@ -61,7 +61,7 @@
           href={`https://whatsonchain.com/tx/${form?.txid}`}>Trasaction Link</a
         >!
       </p>
-      {:else if form?.deployed === false}
+      {:else if form?.success === false}
       <p >{form?.txid}</p>
     {/if}
   </div>
@@ -111,7 +111,7 @@
           href={`https://whatsonchain.com/tx/${form?.txid}`}>Trasaction Link</a
         >!
       </p>
-    {:else if form?.success === false}
+    {:else if form?.deployed === false}
       <p class="pt-2 text-red-600 font-semibold">
         {form?.txid} 
       </p>

@@ -53,10 +53,10 @@ export let form;
     </div>
   </form>
   {#if form?.success}
-    <!-- this message is ephemeral; it exists because the page was rendered in
-		   response to a form submission. it will vanish if the user reloads -->
-    <p class="pt-2">Logged In. Your balance is {form?.balance}!</p>
-  {/if}
+  <!-- this message is ephemeral; it exists because the page was rendered in
+     response to a form submission. it will vanish if the user reloads -->
+  <p class="pt-2">Logged In. Your balance is {form?.balance}!</p>
+{/if}
 </div>
 
 <div
